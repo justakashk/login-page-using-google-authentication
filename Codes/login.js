@@ -1,11 +1,11 @@
  const firebaseConfig = {
-      apiKey: "AIzaSyAgXT6LHoWJOF5KuJs9hD41JnMOUPKBoak",
-      authDomain: "authentication-3bef9.firebaseapp.com",
-      projectId: "authentication-3bef9",
-      storageBucket: "authentication-3bef9.appspot.com",
-      messagingSenderId: "627840880666",
-      appId: "1:627840880666:web:a3d06d2efcd742ce4481a3",
-      measurementId: "G-SHC7Y598CF"
+      apiKey: " ",
+      authDomain: " ",
+      projectId: " ",
+      storageBucket: " ",
+      messagingSenderId: " ",
+      appId: " ",
+      measurementId: " "
     };
 
     firebase.initializeApp(firebaseConfig);
