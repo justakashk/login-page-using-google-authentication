@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Resume Hub</title>
+  <link rel="stylesheet" href="login.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <header>
+    <div class="brand">Resume Hub</div>
+    <div class="auth-buttons" id="auth-buttons">
+      <button onclick="loginWithGoogle()">Login</button>
+      <button onclick="loginWithGoogle()">Sign Up</button>
+    </div>
+    <button class="logout-btn" id="logout-btn" onclick="logout()" style="display:none;">Logout</button>
+  </header>
+
+ <div id="publicContent">
+  <!-- Landing Section -->
+  <section id="landing" class="hero">
+    <div class="hero-content">
+      <h1>🎯 Free Resume Templates</h1>
+      <p>
+        Create, edit, and download professional resumes tailored to your career.
+        <br />
+        <strong>Sign in</strong> to access your personalized dashboard and get started in minutes.
+      </p>
+      <a href="#ats-checker" class="scroll-down">⬇️ Scroll to ATS Checker</a>
+    </div>
+  </section>
+
+  <!-- ATS Checker Section -->
+  <section id="ats-checker" class="ats-section">
+    <h2>📊 Resume ATS Score Checker</h2>
+    <p>
+      Upload your resume (<code>.pdf</code> or <code>.docx</code>) and we’ll instantly analyze it to show how well it passes Applicant Tracking Systems.
+    </p>
+
+    <div class="ats-form">
+      <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx" />
+      <button onclick="checkATSScore()">Check ATS Score</button>
+    </div>
+
+    <div id="atsResult"></div>
+  </section>
+</div>
+
+
+
+  <section id="dashboard">
+    <div class="dashboard-header">
+      <div class="user-info">
+        <img id="user-pic" src="" alt="User Picture">
+        <div>
+          <h3 id="user-name"></h3>
+          <p id="user-email" style="margin: 0;"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-grid">
+      <div class="resume-card">
+        <h3>Professional Resume</h3>
+        <p>Best for corporate jobs and MNCs</p>
+        <button onclick="location.href='https://example.com/professional-resume'">View Resume</button>
+      </div>
+      <div class="resume-card">
+        <h3>Creative Resume</h3>
+        <p>Ideal for designers and freelancers</p>
+        <button onclick="location.href='https://example.com/creative-resume'">View Resume</button>
+      </div>
+      <div class="resume-card">
+        <h3>Simple Resume</h3>
+        <p>Clean and minimal layout for freshers</p>
+        <button onclick="location.href='https://example.com/simple-resume'">View Resume</button>
+      </div>
+      <div class="resume-card">
+        <h3>Modern Resume</h3>
+        <p>Trendy design with focus on skills</p>
+        <button onclick="location.href='https://example.com/modern-resume'">View Resume</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="login.js"> </script>
+</body>
+</html>
